@@ -1,0 +1,68 @@
+@media (max-width: 844px) {
+    .input-flex input {
+      width: 150px; /* Reduce input width on smaller screens */
+    }
+  
+    .my-table {
+      overflow-x: auto;
+    }
+  
+    .my-table .ant-table {
+      overflow-x: auto; /* Ensure table scrolls horizontally on small screens */
+    }
+  
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      padding: 8px; /* Adjust padding for table cells */
+    }
+  
+    .ant-table-pagination {
+      text-align: center; /* Center pagination controls */
+    }
+  
+    .charts-wrapper {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .impexp {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start; /* Align buttons to the left */
+      gap: 1rem; /* Adjust gap between buttons */
+      margin-left: 20px; /* Add margin to align with headings */
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .input-flex input {
+      width: 100px; /* Further reduce input width on very small screens */
+    }
+  
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      font-size: 12px; /* Adjust font size for table cells */
+    }
+  
+    .input-radio {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .btn {
+      font-size: 12px; /* Adjust font size for buttons */
+    }
+  
+    .impexp {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start; /* Align buttons to the left */
+      gap: 1rem; /* Adjust gap between buttons */
+      margin-left: 20px; /* Add margin to align with headings */
+    }
+  }
+  
+
+  .impexp {
+    margin-right: 50px;
+  }

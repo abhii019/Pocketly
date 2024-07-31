@@ -1,0 +1,36 @@
+.mycard{
+ 
+    box-shadow: var(--shadow);
+    min-width:200px;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    flex : 1;
+    padding: 0.2rem ;
+    font-family:"Monsterat";
+  
+}
+.myrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+.mycard p {
+    margin: 0;
+    padding-left: 5px;
+    
+}
+
+.ant-card-head-title {
+    margin :0rem;
+    font-weight: 700;
+    
+   align-items: center;
+}
+.butt{
+  padding-left: 1%;  
+}

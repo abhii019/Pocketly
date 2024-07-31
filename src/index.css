@@ -1,13 +1,37 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+   --theme: #040c3a;
+   --black: #000;
+   --white: #fff;
+   --shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+}
+
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+  min-height: 100vh; /* Ensures body is at least the height of the viewport */
+  overflow-y: auto; /* Enables vertical scrolling */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+input {
+  font-family: "Montserrat", sans-serif; 
+}
+
+.container {
+  min-height: 100vh; /* Ensures the container is at least the height of the viewport */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }

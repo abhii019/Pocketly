@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .signup-signin-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .signup-image-container {
+        width: 700px;
+        height: 600px;
+      margin-bottom: 20px;
+    }
+  }

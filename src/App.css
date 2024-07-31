@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+.wrapper{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100;
+     height:90vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.input-flex {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 0.5rem;
+     width: 100%;
+     box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+     border-radius: 0.5rem;
+     padding: 0rem 0.5rem;
+   }
+   
+   .input-flex input {
+     width: 100%;
+     padding: 0.5rem;
+     border: 0;
+   }
+   
+   .input-flex input:focus {
+     outline: none;
+   }
+   
+   .select-input {
+     width: 30%;
+     margin-right: 10;
+     display: flex;
+     align-items: center;
+     box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+     border-radius: 0.5rem !important;
+     padding: 0.2rem 0.5rem;
+   }
+   
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+   
+   .select-input > div {
+     border: 0px solid #fff !important;
+   }
+
+ 
+   .signup-signin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .signup-image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .signup-image {
+    max-width: 70%;
+    height: 30%;
   }
-}
+  
+  .signup-form-container {
+    flex: 1;
+    padding: 20px;
+  }
+  .chart {
+    width: 800%;
+    max-width: 700px; /* Limit the max width for larger screens */
+  }
+  .charts-wrapper{
+  
+    justify-content: space-evenly;
+    height: auto;
+  
+    border-radius: 0rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap:0px
+    }
+
+  @media (max-width: 600px) {
+    .signup-wrapper {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .custom-input {
+      padding: 8px;
+    }
+  
+    .btn {
+      display: flex;
+      flex-direction: column;
+    }
+    .charts-wrapper{
+      flex-direction: column; /* Stack charts horizontally on larger screens */
+    justify-content: space-evenly;
+    max-width: 600px;
+
+    }
+    .charts-wrapper ,h2{
+      margin: 0;
+      padding-left: 20%;
+    }
+  }
+
+  .btnn{
+    color: var(--theme);
+    text-align: center;
+    font-size: 1rem;
+    width: 97%;
+    font: weight 150px;
+    margin: 0.5rem 0rem;
+    padding: 0 0 0 0 !important;
+    background-color: #fff;
+    border: 1px solid var(--theme);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: auto !important;
+
+  }
+  
